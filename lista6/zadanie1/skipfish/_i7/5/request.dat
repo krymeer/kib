@@ -1,0 +1,12 @@
+POST /authTransfer.php HTTP/1.1
+Host: crypto.test
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.10b
+Range: bytes=0-399999
+Referer: http://crypto.test/
+Cookie: PHPSESSID=bb8h628lpmhpt2a8dd9d8506n6; logSucc=1; logErr=1; logWarn=1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 52
+
+receiver=9876sfi&id=1&address=1&title=skipfish&sum=1

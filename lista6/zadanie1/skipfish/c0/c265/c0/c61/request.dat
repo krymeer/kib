@@ -1,0 +1,9 @@
+GET /icons/small/unknown.png HTTP/1.1
+Host: crypto.test
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.10b
+Range: bytes=0-399999
+Referer: http://crypto.test/
+Cookie: PHPSESSID=bb8h628lpmhpt2a8dd9d8506n6; logSucc=1; logErr=1; logWarn=1
+

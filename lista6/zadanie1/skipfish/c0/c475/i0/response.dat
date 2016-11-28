@@ -1,0 +1,20 @@
+HTTP/1.1 404 Not Found
+Date: Mon, 28 Nov 2016 22:37:42 GMT
+Server: Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3
+Alternates: {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language cs} {length 714}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language de} {length 773}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language en} {length 618}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {language es} {length 709}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language fr} {length 796}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ga} {length 820}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language it} {length 699}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ja} {length 761}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ko} {length 764}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language nl} {length 695}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language nb} {length 690}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language pl} {length 731}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language pt-br} {length 760}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset iso-8859-1} {language pt} {length 272}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ro} {length 696}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language sr} {length 882}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language sv} {length 729}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language tr} {length 662}}
+Vary: accept-language,accept-charset
+Content-Length: 322
+Keep-Alive: timeout=5, max=85
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /vuln/ was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+1

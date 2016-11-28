@@ -1,0 +1,30 @@
+HTTP/1.1 200 Partial Content
+Date: Mon, 28 Nov 2016 22:37:38 GMT
+Server: Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3
+X-Powered-By: PHP/5.6.24
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: logSucc=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0
+Content-Range: bytes 0-914/915
+Content-Length: 915
+Keep-Alive: timeout=5, max=86
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/checkInput.js"></script>
+    <title>Logowanie</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="panel">
+        <h2>Logowanie</h2>
+        <form method="post" action="http://crypto.test/auth.php"

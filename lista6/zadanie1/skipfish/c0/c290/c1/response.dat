@@ -1,0 +1,45 @@
+HTTP/1.1 200 Partial Content
+Date: Mon, 28 Nov 2016 22:37:37 GMT
+Server: Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3
+Last-Modified: Tue, 15 Nov 2016 18:50:43 GMT
+ETag: "4b5-5415b6f048dfd"
+Accept-Ranges: bytes
+Content-Length: 1205
+Content-Range: bytes 0-1204/1205
+Keep-Alive: timeout=5, max=28
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+
+$(document).ready(function() {
+  var regExtended = /[^A-Za-z0-9ĄĆĘŁŃÓŚŻŹąćęłńóśżź., _-]/g;
+  $('input[name="login"]').on('input', function() {
+    $(this).val($(this).val().replace(/[^\w.-]/g, ''));
+  })
+  $('input[type="password"]').on('input', function() {
+    $(this).val($(this).val().replace(/[^\x21-\x7E]/g, ''));
+  });  
+
+  $('input[name="receiver"]').on('input', function() {
+    $(this).val($(this).val().replace(regExtended, ''));
+  })  
+  $('input[name="address"]').on('input', function() {
+    $(this).val($(this).val().replace(regExtended, ''));
+  })
+  $('input[name="title"]').on('input', function() {
+    $(this).val($(this).val().replace(regExtended, ''));
+  })
+  $('input[name="id"]').keypress(function(e) {
+    var keycode = e.charCode || e.keyCode;
+    if (keycode == 32) return false;
+  });
+  $('input[name="id"]').on('input', function() {
+    $(this).val($(this).val().replace(/[^0-9 ]/g, ''));
+    var n = $(this).val().length;
+    if (n == 2 || n == 7 || n == 12 || n == 17 || n == 22 || n == 27) {
+      $(this).val($(this).val() + ' ');
+    }
+  })
+  $('input[name="sum"]').on('input', function() {
+    $(this).val($(this).val().replace(/[^0-9.]/g, ''));
+  })
+});

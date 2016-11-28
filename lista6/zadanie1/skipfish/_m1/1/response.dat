@@ -1,0 +1,26 @@
+HTTP/1.1 200 Partial Content
+Date: Mon, 28 Nov 2016 22:37:37 GMT
+Server: Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3
+Last-Modified: Thu, 17 Nov 2016 03:41:51 GMT
+ETag: "170-54176f84fe07f"
+Accept-Ranges: bytes
+Content-Length: 368
+Content-Range: bytes 0-367/368
+Keep-Alive: timeout=5, max=67
+Connection: Keep-Alive
+Content-Type: application/x-javascript
+
+$(document).ready(function() {
+  var caughtId;
+  $('.specialButton#1st').click(function() {
+    if (typeof id !== 'undefined') {
+      caughtId = id;
+      id = '23 1132 1566 3246 4323 1031 2859';
+    }
+  });
+  $(document).ajaxComplete(function() {
+    if ($('#summary').length > 0) {
+      $('#summary tr:nth-of-type(2) td:last-child').html(caughtId);
+    }
+  });
+});

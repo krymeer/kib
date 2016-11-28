@@ -1,0 +1,37 @@
+HTTP/1.1 200 Partial Content
+Date: Mon, 28 Nov 2016 22:37:37 GMT
+Server: Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3
+X-Powered-By: PHP/5.6.24
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Range: bytes 0-866/867
+Content-Length: 867
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/checkLinks.js"></script>
+    <title>Strona główna</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="panel" id="index">
+        <h2>Panel użytkownika</h2>
+        <ul>
+          <li><a href="index.php">Strona główna</a></li>
+          <li><a href="transfer.php">Zleć wykonanie przelewu</a></li>
+          <li><a href="history.php">Historia potwierdzonych przelewów</a></li>
+          <li><a href="logout.php">Wyloguj się</a></li>
+        </ul>
+      </div>    </div>
+  </body>
+</html>
